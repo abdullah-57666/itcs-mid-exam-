@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    align-items: center;
+
+}
+.parent{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left
+{
+    border: 2px solid black;
+    height: 100%;
+    width: 40%;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uper{
+   border-top-left-radius: 1px solid bold;
+    gap: 30px;
+    flex: 1;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lower{
+
+    gap: 30px;
+    flex: 1;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+input{
+    height: 20px;
+    width: 150px;
+    
+}
+.right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    justify-items: first baseline;
+    display: flex;
+   
+   cursor: pointer; 
+   transition: 0.5sec;
+}
+button:hover
+{
+background-color: blue;
+
+}
+#close{
+    display: none;
+}
+body:has(#close:checked) .parent{
+    display: none;
+}
+body:has(#close:checked) #close{
+    display: block;
+}
